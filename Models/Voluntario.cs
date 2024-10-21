@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace dwdm_pws2_voluntarios.Models;
@@ -12,7 +11,7 @@ public class Voluntario
     [StringLength(15)]
     [Required]
     public string? Apelido { get; set; }
-    [Required]
+    [Range(100000000, 299999999)]
     public int Nif { get; set; }
     [Required]
     [StringLength(15)]
